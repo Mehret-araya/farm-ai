@@ -1,0 +1,295 @@
+package com.example.data.model
+
+object StaticCropKnowledge {
+
+  val CROP_GUIDES = listOf(
+    CropGuide(
+      id = "teff",
+      name = "Teff",
+      nameAmharic = "ጤፍ (Eragrostis tef)",
+      category = "Cereal",
+      scientificName = "Eragrostis tef",
+      altitudeMeters = "1,800 – 2,100 m",
+      rainfallMm = "750 – 850 mm",
+      soilType = "Black clay (Vertisols) or sandy loam",
+      seedRate = "10 – 15 kg/ha (Row planting)",
+      plantingSeason = "Meher: Mid-July to early August",
+      fertilizerGuide = "Apply 100 kg/ha NPS at planting; 50 kg/ha Urea at tillering (3–4 weeks after germination).",
+      commonDiseases = listOf("Teff Rust (Uromyces eragrostidis)", "Head Smut", "Teff Shoot Fly"),
+      harvestingTips = "Harvest when the panicles turn straw-yellow and grain hardens. Dry immediately on clean tarps to prevent soil contamination.",
+      amharicSummary = "ጤፍ በኢትዮጵያ ቀዳሚ የዋስትና እህል ነው። በመስመር በመዝራት ምርታማነትን በ30% ማሳደግ ይቻላል። ዘር ከመዝራት በፊት አፈር በደንብ መደለዝ አለበት።"
+    ),
+    CropGuide(
+      id = "wheat",
+      name = "Wheat",
+      nameAmharic = "ስንዴ (Triticum aestivum)",
+      category = "Cereal",
+      scientificName = "Triticum aestivum",
+      altitudeMeters = "1,900 – 2,700 m",
+      rainfallMm = "600 – 1,000 mm",
+      soilType = "Well-drained fertile loam or clay loam",
+      seedRate = "125 – 150 kg/ha (Broadcast) or 100 kg/ha (Row)",
+      plantingSeason = "Meher: Late June to mid-July",
+      fertilizerGuide = "100 kg/ha NPS at planting; Split Urea: 50 kg at tillering, 50 kg at stem elongation.",
+      commonDiseases = listOf("Stem Rust (ቢጫ ዋግ)", "Stripe / Yellow Rust", "Septoria Leaf Blotch"),
+      harvestingTips = "Harvest when moisture drops below 14%. Thresh promptly to prevent sprouting during unseasonal rains.",
+      amharicSummary = "ስንዴ በደጋማ እና ወይና ደጋ አካባቢዎች በጥሩ ሁኔታ ይበቅላል። የቢጫ ዋግ እና ግንድ ዝገት ምልክት ሲታይ በፍጥነት ፀረ-ፈንገስ መርጨት አስፈላጊ ነው።"
+    ),
+    CropGuide(
+      id = "maize",
+      name = "Maize (Corn)",
+      nameAmharic = "በቆሎ (Zea mays)",
+      category = "Cereal",
+      scientificName = "Zea mays",
+      altitudeMeters = "1,000 – 2,200 m",
+      rainfallMm = "800 – 1,500 mm",
+      soilType = "Deep, fertile, well-drained sandy loam",
+      seedRate = "25 – 30 kg/ha (Spacing: 75cm x 25cm)",
+      plantingSeason = "Belg / Early Meher: April to May",
+      fertilizerGuide = "100 kg/ha NPS at sowing; 100 kg/ha Urea split between knee-high stage and tasseling.",
+      commonDiseases = listOf("Fall Armyworm (የበቆሎ ተምች)", "Maize Lethal Necrosis", "Gray Leaf Spot"),
+      harvestingTips = "Harvest when kernels form black layer at base and husks are completely brown and dry.",
+      amharicSummary = "በቆሎ ከፍተኛ ማዳበሪያና የዝናብ መጠን ይፈልጋል። የበቆሎ ተምች እንዳይስፋፋ ገና ከእንጭጩ ጀምሮ መፈተሽና በእጅ ማንሳት ወይም መርጨት ያስፈልጋል።"
+    ),
+    CropGuide(
+      id = "coffee",
+      name = "Coffee Arabica",
+      nameAmharic = "ቡና (Coffea arabica)",
+      category = "Cash Crop",
+      scientificName = "Coffea arabica",
+      altitudeMeters = "1,500 – 2,100 m",
+      rainfallMm = "1,500 – 2,000 mm",
+      soilType = "Deep, volcanic, organic-rich, acidic soil (pH 5.0 - 6.0)",
+      seedRate = "Seedling transplanting: 2m x 2m spacing (~2,500 trees/ha)",
+      plantingSeason = "Transplant at onset of main rainy season (June)",
+      fertilizerGuide = "Well-rotted compost and mulch; supplementary balanced NPK with micro-nutrients.",
+      commonDiseases = listOf("Coffee Berry Disease (CBD)", "Coffee Leaf Rust", "Coffee Wilt Disease"),
+      harvestingTips = "Selective hand-picking of only deep red cherries. Avoid stripping green or overripe cherries.",
+      amharicSummary = "የኢትዮጵያ የቡና ሀብት ጥራቱ የሚጠበቀው በጥላ ዛፎች ስር በማሳደግ እና ቀያይ የደረሱ ፍሬዎችን ብቻ በጥንቃቄ በመልቀም ነው።"
+    ),
+    CropGuide(
+      id = "barley",
+      name = "Barley",
+      nameAmharic = "ገብስ (Hordeum vulgare)",
+      category = "Cereal",
+      scientificName = "Hordeum vulgare",
+      altitudeMeters = "2,300 – 3,200 m (Highlands)",
+      rainfallMm = "500 – 800 mm",
+      soilType = "Light loam with good drainage",
+      seedRate = "85 – 100 kg/ha",
+      plantingSeason = "Meher: June to July",
+      fertilizerGuide = "60 kg/ha NPS at planting; 30 kg/ha Urea depending on highland fertility.",
+      commonDiseases = listOf("Barley Scald", "Net Blotch", "Powdery Mildew"),
+      harvestingTips = "Cut when the heads bend down and straw is crisp. Store in dry, ventilated granaries.",
+      amharicSummary = "ገብስ በከፍተኛ ቅዝቃዜ ደጋማ ቦታዎች ተስማሚ ነው። ለምግብ፣ ለቆሎ፣ ለቂጣና ለጠላ/ቢራ ግብአትነት ከፍተኛ ተፈላጊነት አለው።"
+    ),
+    CropGuide(
+      id = "sorghum",
+      name = "Sorghum",
+      nameAmharic = "ማሽላ (Sorghum bicolor)",
+      category = "Cereal",
+      scientificName = "Sorghum bicolor",
+      altitudeMeters = "500 – 1,900 m (Drought-tolerant)",
+      rainfallMm = "400 – 700 mm",
+      soilType = "Tolerates poor, rocky, and drought-prone soils",
+      seedRate = "10 – 15 kg/ha",
+      plantingSeason = "April to May",
+      fertilizerGuide = "50 – 75 kg/ha NPS; small top-dressing of Urea in moist years.",
+      commonDiseases = listOf("Striga Weed (አረም አጋም)", "Anthracnose", "Sorghum Midge"),
+      harvestingTips = "Harvest when seeds cannot be pierced with thumbnail. Dry thoroughly in sunlight.",
+      amharicSummary = "ማሽላ ድርቅን በብርቱ የሚቋቋም እህል ነው። በተለይ በቆላማ እና ዝቅተኛ ዝናብ በሚያገኙ አካባቢዎች የህዝብ የምግብ ዋስትና ነው።"
+    ),
+    CropGuide(
+      id = "tomato",
+      name = "Tomato",
+      nameAmharic = "ቲማቲም (Solanum lycopersicum)",
+      category = "Horticulture",
+      scientificName = "Solanum lycopersicum",
+      altitudeMeters = "700 – 2,000 m",
+      rainfallMm = "Irrigated / 600 – 1,200 mm",
+      soilType = "Rich sandy loam high in organic matter (pH 6.0 – 6.8)",
+      seedRate = "300 – 400 g/ha (Nursery beds)",
+      plantingSeason = "Year-round with irrigation; avoid peak rain to reduce blight",
+      fertilizerGuide = "150 kg/ha NPS + 100 kg/ha Potassium; Urea split during vegetative growth.",
+      commonDiseases = listOf("Late Blight (አረንጓዴ ቅጠል ጠቆር)", "Bacterial Wilt", "Tuta Absoluta"),
+      harvestingTips = "Pick at breaker stage for distant markets or fully red for immediate local sales.",
+      amharicSummary = "ቲማቲም ጥሩ ገቢ የሚያስገኝ የጓሮ አትክልት ነው። የቅጠል ማበስበስ በሽታን ለመከላከል የውሃ መርጫውን ወደ ስሩ ብቻ ማድረግ ይመረጣል።"
+    ),
+    CropGuide(
+      id = "potato",
+      name = "Potato",
+      nameAmharic = "ድንች (Solanum tuberosum)",
+      category = "Horticulture",
+      scientificName = "Solanum tuberosum",
+      altitudeMeters = "1,800 – 2,800 m",
+      rainfallMm = "700 – 1,200 mm",
+      soilType = "Loose, friable sandy loam rich in humus",
+      seedRate = "1,500 – 2,000 kg/ha (Healthy certified tubers)",
+      plantingSeason = "Belg (March) and Meher (June)",
+      fertilizerGuide = "150 kg/ha NPS at planting; earthing up at 4 weeks.",
+      commonDiseases = listOf("Potato Late Blight", "Bacterial Wilt", "Potato Tuber Moth"),
+      harvestingTips = "De-haulm (cut stems) 10 days before harvest to harden the tuber skin.",
+      amharicSummary = "ድንች በደጋማ ቦታዎች በጥሩ ሁኔታ ይመርታል። ዘሩን ከመትከል በፊት የፈነዳና ያልበሰበሰ ንፁህ ድንች መምረጥ ግድ ይላል።"
+    ),
+    CropGuide(
+      id = "chickpea",
+      name = "Chickpea",
+      nameAmharic = "ሽምብራ (Cicer arietinum)",
+      category = "Pulse",
+      scientificName = "Cicer arietinum",
+      altitudeMeters = "1,400 – 2,300 m",
+      rainfallMm = "600 – 900 mm (Residual moisture)",
+      soilType = "Heavy black clay (Vertisols)",
+      seedRate = "70 – 90 kg/ha (Desi) or 120 kg/ha (Kabuli)",
+      plantingSeason = "September to October (Grown on residual soil moisture)",
+      fertilizerGuide = "50 kg/ha NPS at planting; fixes its own nitrogen with Rhizobium.",
+      commonDiseases = listOf("Ascochyta Blight", "Fusarium Wilt", "Pod Borer"),
+      harvestingTips = "Harvest when leaves yellow and dry pods rattle upon shaking.",
+      amharicSummary = "ሽምብራ ከዋናው ዝናብ ማብቂያ በኋላ በመሬት ውስጥ ባለው ቀሪ እርጥበት የሚዘራ አፈር አበልጻጊ የጥራጥሬ ሰብል ነው።"
+    )
+  )
+
+  val CROP_DISEASES = listOf(
+    CropDisease(
+      id = "dis_wheat_rust",
+      cropName = "Wheat",
+      diseaseName = "Stem Rust / Ug99 (Puccinia graminis)",
+      diseaseNameAmharic = "የስንዴ ቢጫና ግንድ ዋግ በሽታ",
+      pathogenType = "Fungal",
+      symptoms = "Reddish-brown, elongated pustules on stems and leaf sheaths. Ruptures stem epidermis, exposing powdery spores.",
+      organicControl = "Plant resistant cultivars (e.g. Kingbird, Ogolcho); crop rotation with legumes; early planting.",
+      chemicalControl = "Foliar fungicide containing Tebuconazole, Propiconazole, or Azoxystrobin (spray at first pustule sign).",
+      prevention = "Monitor fields twice weekly during warm humid weather; eradicate barberry alternate hosts; avoid high density sowing.",
+      amharicAdvice = "በሽታው እንደታየ በፍጥነት ፀረ-ፈንገስ መርጨት ያስፈልጋል። የሚቀጥለው ወቅት ላይ በሽታውን የሚቋቋሙ የተመረጡ የስንዴ ዝርያዎችን ተጠቀሙ።",
+      sampleLeafEmoji = "🌾"
+    ),
+    CropDisease(
+      id = "dis_maize_faw",
+      cropName = "Maize",
+      diseaseName = "Fall Armyworm (Spodoptera frugiperda)",
+      diseaseNameAmharic = "የበቆሎ ተምች (አረንጓዴ ትል)",
+      pathogenType = "Insect Pest",
+      symptoms = "Ragged, windowpane holes on leaves, sawdust-like frass (droppings) accumulated in the plant whorl/funnel.",
+      organicControl = "Hand-picking egg masses and caterpillars; dropping fine dry sand, wood ash, or soil into whorls; neem oil extract sprays.",
+      chemicalControl = "Ampligo (Chlorantraniliprole + Lambdacyhalothrin) or Spinosad directed into central whorl.",
+      prevention = "Intercropping maize with Desmodium (push-pull method); early morning scouting; preserving predatory wasps and ants.",
+      amharicAdvice = "ተምቹ ገና ወደ በቆሎው ልብ ከመግባቱ በፊት የዛፍ አመድ ወይም ደረቅ አሸዋ ወደ በቆሎው እምብርት በመጨመር በቀላሉ መከላከል ይቻላል።",
+      sampleLeafEmoji = "🌽"
+    ),
+    CropDisease(
+      id = "dis_coffee_clr",
+      cropName = "Coffee",
+      diseaseName = "Coffee Leaf Rust (Hemileia vastatrix)",
+      diseaseNameAmharic = "የቡና ቅጠል ዝገት በሽታ",
+      pathogenType = "Fungal",
+      symptoms = "Yellow-orange powdery circular lesions on underside of leaves; premature defoliation and branch dieback.",
+      organicControl = "Proper shade management (50-60% canopy cover); balanced organic nutrition; copper hydroxide sprays.",
+      chemicalControl = "Systemic fungicides (Triadimefon or Epoxiconazole) applied before rainy season onset.",
+      prevention = "Pruning old branches for air circulation; planting CBD/Rust-resistant cultivars from Jimma Agricultural Research Center.",
+      amharicAdvice = "በቡና ቅጠል ስር ብጫ ዱቄት መሰል ነጠብጣቦች ሲታዩ የፀሐይና የንፋስ አየር እንዲዘዋወር የቡናውን ቅርንጫፎች ይከርክሙ።",
+      sampleLeafEmoji = "☕"
+    ),
+    CropDisease(
+      id = "dis_tomato_lb",
+      cropName = "Tomato",
+      diseaseName = "Late Blight (Phytophthora infestans)",
+      diseaseNameAmharic = "የቲማቲም አረንጓዴ ቅጠል ጠቆር በሽታ",
+      pathogenType = "Oomycete / Water Mold",
+      symptoms = "Large, water-soaked dark greenish-brown blotches on leaves with white fuzzy fungal growth under damp conditions; brown firm rot on fruit.",
+      organicControl = "Bordeaux mixture (copper sulfate + lime); remove infected leaves immediately and bury far away; drip irrigation instead of overhead.",
+      chemicalControl = "Mancozeb (preventive) or Ridomil Gold (Metalaxyl + Mancozeb) applied curatively.",
+      prevention = "Avoid planting tomatoes near potatoes; practice 3-year crop rotation; space plants at least 50 cm apart for quick drying.",
+      amharicAdvice = "ውሃ በቅጠሎቹ ላይ እንዳይረጭ ስሩ ላይ ብቻ ማጠጣት። የተበላሹትን ቅጠሎች ቆርጦ በማቃጠል ወይም ቀብሮ ማጥፋት።",
+      sampleLeafEmoji = "🍅"
+    ),
+    CropDisease(
+      id = "dis_teff_fly",
+      cropName = "Teff",
+      diseaseName = "Teff Shoot Fly (Atherigona hyalinipennis)",
+      diseaseNameAmharic = "የጤፍ ቡቃያ ተምች/ትል",
+      pathogenType = "Insect Pest",
+      symptoms = "Central shoot turns yellow and dies ('dead heart' symptom) in young seedlings 2–4 weeks after germination.",
+      organicControl = "High seeding rate to compensate for damaged tillers; early synchronous sowing across the community.",
+      chemicalControl = "Seed dressing with Gaucho or foliar spray of Cypermethrin if >15% seedlings show dead heart.",
+      prevention = "Weed field borders to eliminate wild grass hosts; plant immediately at the start of optimal sowing window.",
+      amharicAdvice = "በጤፍ ቡቃያ ወቅት ማእከላዊው ቅጠል ሲደርቅ ትል እንዳለ ይጠቁማል። ቀደም ብሎ ከተዘራ እና አረም በጊዜ ከታረመ ጉዳቱ ይቀንሳል።",
+      sampleLeafEmoji = "🌱"
+    ),
+    CropDisease(
+      id = "dis_potato_scab",
+      cropName = "Potato",
+      diseaseName = "Bacterial Wilt / Brown Rot (Ralstonia solanacearum)",
+      diseaseNameAmharic = "የድንች ባክቴሪያ ቅጠል ጠውላጊ በሽታ",
+      pathogenType = "Bacterial",
+      symptoms = "Rapid wilting of foliage during warm afternoons with green leaves remaining; brown ring inside cut potato tubers that oozes white bacterial slime.",
+      organicControl = "Strict quarantine of infected plots; rotate with maize or grass pasture for 4 seasons; plant clean certified disease-free tubers.",
+      chemicalControl = "No effective chemical cure once infected in soil; soil disinfection and strict hygiene.",
+      prevention = "Do not cut seed tubers before planting; sanitize farming tools with 5% bleach between fields; do not furrow-irrigate from infected fields.",
+      amharicAdvice = "የባክቴሪያ በሽታ በመሬት ውስጥ ለረጅም ጊዜ ስለሚቆይ በሽታው የታየበት መሬት ላይ ለ3 ዓመት ድንች ወይም ቲማቲም እንዳይዘራበት።",
+      sampleLeafEmoji = "🥔"
+    )
+  )
+
+  val SAMPLE_WEATHER_REPORTS = mapOf(
+    "Arsi - Highlands (Dega)" to AgroWeather(
+      regionName = "Arsi / Assela",
+      zoneNameAmharic = "አርሲ / አሰላ (ደጋማ አካባቢ)",
+      temperatureC = 19,
+      condition = "Partly Cloudy & Cool",
+      conditionAmharic = "ከፊል ደመናማና ቀዝቃዛ",
+      rainfallProbability = 20,
+      humidityPercent = 68,
+      soilMoisture = "Optimal (65%)",
+      sprayingFeasibility = "Favorable",
+      farmingAdvisory = "Excellent conditions for wheat & barley weeding and split Urea application. Low rust sporulation risk today.",
+      farmingAdvisoryAmharic = "ለስንዴ እና ገብስ አረም ማረም እና የዩሪያ ማዳበሪያ ለመጨመር እጅግ ተስማሚ ቀን ነው።",
+      dailyForecast = listOf(
+        DailyAgroForecast("Mon", "ሰኞ", 20, 10, 15, "⛅"),
+        DailyAgroForecast("Tue", "ማክሰኞ", 21, 9, 20, "⛅"),
+        DailyAgroForecast("Wed", "ረቡዕ", 18, 11, 65, "🌧️"),
+        DailyAgroForecast("Thu", "ሐሙስ", 19, 10, 40, "🌦️"),
+        DailyAgroForecast("Fri", "አርብ", 21, 9, 10, "☀️")
+      )
+    ),
+    "Jimma - Midlands (Weina Dega)" to AgroWeather(
+      regionName = "Jimma / Gomma",
+      zoneNameAmharic = "ጅማ / ጎማ (ወይና ደጋ)",
+      temperatureC = 25,
+      condition = "Warm & Humid with Light Showers",
+      conditionAmharic = "ሞቃት፣ እርጥበታማና ቀላል ዝናብ",
+      rainfallProbability = 60,
+      humidityPercent = 82,
+      soilMoisture = "High (80%)",
+      sprayingFeasibility = "Caution - Rain Imminent",
+      farmingAdvisory = "High humidity increases Coffee Berry Disease & Rust spores. Postpone pesticide sprays until morning dry window.",
+      farmingAdvisoryAmharic = "ከፍተኛ እርጥበት ለቡና በሽታዎች መስፋፋት ምቹ ስለሚያደርግ የኬሚካል ርጭት ዝናብ እስኪያቆም ድረስ ይዘግዩ።",
+      dailyForecast = listOf(
+        DailyAgroForecast("Mon", "ሰኞ", 25, 14, 60, "🌦️"),
+        DailyAgroForecast("Tue", "ማክሰኞ", 24, 15, 75, "🌧️"),
+        DailyAgroForecast("Wed", "ረቡዕ", 26, 14, 45, "⛅"),
+        DailyAgroForecast("Thu", "ሐሙስ", 27, 13, 20, "⛅"),
+        DailyAgroForecast("Fri", "አርብ", 26, 14, 50, "🌦️")
+      )
+    ),
+    "Debre Zeit - Midlands (Bishoftu)" to AgroWeather(
+      regionName = "Bishoftu / Ada'a",
+      zoneNameAmharic = "ቢሾፍቱ / አዳዓ (ወይና ደጋ)",
+      temperatureC = 24,
+      condition = "Clear & Sunny with Mild Breeze",
+      conditionAmharic = "ፀሐያማና ጥርት ያለ አየር",
+      rainfallProbability = 10,
+      humidityPercent = 52,
+      soilMoisture = "Moderate (55%)",
+      sprayingFeasibility = "Favorable",
+      farmingAdvisory = "Optimal weather for Teff field maintenance and chickpea residual soil moisture assessment.",
+      farmingAdvisoryAmharic = "ለጤፍ ማሳ ክትትልና አረም ለማረም ተስማሚ ፀሐያማ አየር።",
+      dailyForecast = listOf(
+        DailyAgroForecast("Mon", "ሰኞ", 25, 12, 10, "☀️"),
+        DailyAgroForecast("Tue", "ማክሰኞ", 26, 12, 10, "☀️"),
+        DailyAgroForecast("Wed", "ረቡዕ", 25, 13, 25, "⛅"),
+        DailyAgroForecast("Thu", "ሐሙስ", 24, 12, 15, "⛅"),
+        DailyAgroForecast("Fri", "አርብ", 25, 11, 5, "☀️")
+      )
+    )
+  )
+}

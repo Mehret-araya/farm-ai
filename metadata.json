@@ -1,0 +1,6 @@
+{
+  "name": "FarmAI",
+  "description": "AI-Powered Farming Assistant with crop disease diagnosis, bilingual agronomist chatbot (English & Amharic), weather alerts, and offline crop guides.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
